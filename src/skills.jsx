@@ -29,7 +29,7 @@ export default function Example4() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {Skills.map((skill, index) => (
                         <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-semibold mb-2">{skill.name}</h3>
+                            <h3 className="text-xl text-white font-semibold mb-2">{skill.name}</h3>
                             <p className="text-gray-400 mb-4">Category: {skill.category}</p>
                             <div className="w-full bg-gray-700 rounded-full h-2.5">
                                 <div
