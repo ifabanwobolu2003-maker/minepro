@@ -61,7 +61,7 @@ const projects = [
         description: "A website for THUB GADGET.",
         image: "/projects/project9.png.jpeg",
         tags: ["React", "Tailwind CSS"],
-        demoUrl:"http://localhost:5179/"
+        demoUrl:"https://thub-e-commerce.netlify.app/"
     }
 
 
