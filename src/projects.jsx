@@ -53,7 +53,7 @@ const projects = [
         description: "A recreation of Apple's website.",
         image: "/projects/project7.png.jpeg",
         tags: ["HTML", "CSS"],
-        demoUrl:"http://127.0.0.1:5500/apple.html"
+        demoUrl:"https://ipj-clone.netlify.app/"
     },
     {
         id: 8,
