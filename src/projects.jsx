@@ -62,6 +62,14 @@ const projects = [
         image: "/projects/project9.png.jpeg",
         tags: ["React", "Tailwind CSS"],
         demoUrl:"https://thub-e-commerce.netlify.app/"
+    },
+    {
+        id: 9,
+        title: "Convention 6.0 Recap video",
+        description: "A video of convention 6.0",
+        image: "/projects/project10.png.jpeg",
+        tags: ["CapCut", "Videography"],
+        demoUrl:"https://www.instagram.com/reel/DK4txCls8Kr/?igsh=MW84c2JidWZvdmxhag=="
     }
 
 
