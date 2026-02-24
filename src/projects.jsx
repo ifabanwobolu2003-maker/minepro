@@ -70,6 +70,14 @@ const projects = [
         image: "/projects/project10.png.jpeg",
         tags: ["CapCut", "Videography"],
         demoUrl:"https://www.instagram.com/reel/DK4txCls8Kr/?igsh=MW84c2JidWZvdmxhag=="
+    },
+    {
+        id: 10,
+        title: "THUB LANDING PAGE",
+        description: "A website for THUB LANDING PAGE.",
+        image: "/projects/project11.png.jpeg",
+        tags: ["React", "Tailwind CSS"],
+        demoUrl:"https://lpage-liart.vercel.app/"
     }
 
 
