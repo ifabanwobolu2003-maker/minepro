@@ -25,6 +25,7 @@ export default function Example1() {
       setResult("Something went wrong ❌");
     }
   };
+
   return (
     <div
     id="contact"
@@ -179,11 +180,6 @@ export default function Example1() {
             </label>
           </div>
         </div>
-
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_subject" value="New Portfolio Message" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_next" value="http://tife-portfolio.netlify.app/" />
         <div className="mt-10">
           <button
             type="submit"
