@@ -22,7 +22,7 @@ export default function Example1() {
         <h3 className="mt-2 text-3xl text-blue-600/75 dark:text-sky-400/75 font-bold">Let's Connect</h3>
         <p className="mt-2 text-lg/8 text-gray-400">Let's connect and discuss your project or any opportunities.</p>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form action="https://formsubmit.co/boluwatimi@gmail.com" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm/6 font-semibold text-white">
@@ -127,7 +127,7 @@ export default function Example1() {
                 id="message"
                 name="message"
                 placeholder='Your message'
-                rows={4}
+                rows={6}
                 className="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
                 defaultValue={''}
               />
@@ -155,6 +155,11 @@ export default function Example1() {
             </label>
           </div>
         </div>
+
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="New Portfolio Message" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="http://localhost:5173/" />
         <div className="mt-10">
           <button
             type="submit"
