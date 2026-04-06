@@ -21,7 +21,7 @@ const projects = [
         description: "A video of tife 2025 memories.",
         image: "/projects/project3.png.jpeg",
         tags: ["CapCut", "Videography"],
-        demoUrl:"https://vt.tiktok.com/ZS5B92CuC/"
+        demoUrl:"https://drive.google.com/file/d/1OQpZNdt4rrfzN8ZaEAg7F7sYWWTB5oKR/view?usp=drivesdk"
     },
     {
         id: 4,
@@ -78,6 +78,14 @@ const projects = [
         image: "/projects/project11.png.jpeg",
         tags: ["React", "Tailwind CSS"],
         demoUrl:"https://lpage-liart.vercel.app/"
+    },
+    {
+        id: 11,
+        title: "Recap of APPSN",
+        description: "A video recap of the APPSN event.",
+        image: "/projects/work2.jpeg",
+        tags: ["CapCut", "Videography"],
+        demoUrl:"https://www.instagram.com/reel/DQSLabMiN0Z/?igsh=NnpzZWU1d3BieHpj"
     }
 
 
