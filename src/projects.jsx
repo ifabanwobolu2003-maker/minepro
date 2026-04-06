@@ -85,7 +85,7 @@ const projects = [
         description: "A video recap of the APPSN event.",
         image: "/projects/work2.jpeg",
         tags: ["CapCut", "Videography"],
-        demoUrl:"https://www.instagram.com/reel/DQSLabMiN0Z/?igsh=NnpzZWU1d3BieHpj"
+        demoUrl:"https://drive.google.com/file/d/1ISUYYMzmCV8IFlmq5v9gxqjuQY5EyyMD/view?usp=drivesdk"
     }
 
 
