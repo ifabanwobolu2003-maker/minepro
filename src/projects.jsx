@@ -9,9 +9,9 @@ const projects = [
     },
     {
         id: 2,
-        title: "Lola brand",
-        description: "An anticipation for the unveiling of Lola's brand.",
-        image: "/projects/project2.png.jpeg",
+        title: "BTS of APPSN",
+        description: "Behind the scenes of APPSN.",
+        image: "/projects/work1.jpeg",
         tags: ["CapCut", "Videography"],
         demoUrl:"https://www.instagram.com/reel/DQSLabMiN0Z/?igsh=NnpzZWU1d3BieHpj"
     },
