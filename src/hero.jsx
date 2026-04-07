@@ -70,7 +70,7 @@ export default function Example() {
 
         <div className='lg:hidden md:flex flex-col justify-end'>
             <button onClick={handleMenuToggle} className="text-white">
-              <Bars3Icon className="h-6 w-6" />
+              {mobileMenuOpen ? <XMarkIcon className="size-6" /> : <Bars3Icon className="size-6" />}
             </button>
         </div>
 
@@ -78,7 +78,16 @@ export default function Example() {
          <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
             <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
-            <div className="flex items-center justify-between"></div>
+            <div className="flex items-center justify-between">
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(false)}
+                className="-m-2.5 rounded-md p-2.5 text-gray-200"
+              >
+                <span className="sr-only">Close menu</span>
+                <XMarkIcon aria-hidden="true" className="size-6" />
+              </button>
+            </div>
           </DialogPanel>   
          </Dialog> 
         </div>
