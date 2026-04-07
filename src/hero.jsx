@@ -43,8 +43,8 @@ export default function Example() {
         </nav>
 
         <div className='lg:hidden md:flex flex-col justify-end'>
-            <button onClick={handleMenuToggle} className="text-white">
-              {isMenuOpen ? <XMarkIcon className="size-6" /> : <Bars3Icon className="size-9" />}
+            <button onClick={handleMenuToggle} className="text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              {isMenuOpen ? <XMarkIcon className="size-6" /> : <Bars3Icon className="size-8" />}
             </button>
         </div>
 
