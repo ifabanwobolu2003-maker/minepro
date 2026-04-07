@@ -62,8 +62,8 @@ export default function Example() {
                 <XMarkIcon aria-hidden="true" className="size-6" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-white/10">
+            <div className="fixed mt-6 flow-root">
+              <div className="fixed -my-6 divide-y divide-white/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a
