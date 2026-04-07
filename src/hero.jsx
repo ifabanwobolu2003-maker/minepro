@@ -15,6 +15,10 @@ const navigation = [
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  const handleMenuToggle = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  }
+
   return (
     <div className="bg-gray-900">
       <header className="absolute inset-x-0 top-0 z-50">
