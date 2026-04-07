@@ -68,6 +68,12 @@ export default function Example() {
           </div> */}
         </nav>
 
+        <div className='lg:hidden md:flex flex-col justify-end'>
+            <button onClick={handleMenuToggle} className="text-white">
+              <Bars3Icon className="h-6 w-6" />
+            </button>
+        </div>
+
         <div classname="lg:hidden">
          <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
             <div className="fixed inset-0 z-50" />
