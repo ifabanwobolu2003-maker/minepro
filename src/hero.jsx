@@ -33,7 +33,7 @@ export default function Example() {
               />
             </a>
           </div> */}
-          <div className="flex lg:hidden">
+          {/* <div className="flex lg:hidden">
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
@@ -42,7 +42,7 @@ export default function Example() {
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="size-6" />
             </button>
-          </div>
+          </div> */}
           <header className="fixed top-6 left-1/2 z-50 -translate-x-1/2">
             <div className="flex items-center gap-10 px-10 py-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-md shadow-lg shadow-black/20">
                <span className="text-blue-600/100 dark:text-sky-400/100 font-semibold mr-10">
