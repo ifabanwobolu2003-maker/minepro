@@ -13,10 +13,10 @@ const navigation = [
 ]
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleMenuToggle = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+    setIsMenuOpen(!isMenuOpen);
   }
 
   return (
@@ -28,7 +28,7 @@ export default function Example() {
                <span className="text-blue-600/100 dark:text-sky-400/100 font-semibold mr-10">
                 Boluwatife
               </span>
-              <div className="flex items-center gap-8">
+              <div className="hidden md:flex items-center gap-8">
                 {navigation.map((item) => (
                 <a 
                 key={item.name} 
@@ -44,18 +44,18 @@ export default function Example() {
 
         <div className='lg:hidden md:flex flex-col justify-end'>
             <button onClick={handleMenuToggle} className="text-white">
-              {mobileMenuOpen ? <XMarkIcon className="size-6" /> : <Bars3Icon className="size-6" />}
+              {isMenuOpen ? <XMarkIcon className="size-6" /> : <Bars3Icon className="size-6" />}
             </button>
         </div>
 
         <div classname="lg:hidden">
-         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+         <Dialog open={isMenuOpen} onClose={handleMenuToggle} className="lg:hidden">
             <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
             <div className="flex items-center justify-between">
               <button
                 type="button"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={() => setIsMenuOpen(false)}
                 className="-m-2.5 rounded-md p-2.5 text-gray-200"
               >
                 <span className="sr-only">Close menu</span>
@@ -74,14 +74,6 @@ export default function Example() {
                       {item.name}
                     </a>
                   ))}
-                </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5"
-                  >
-                    Log in
-                  </a>
                 </div>
               </div>
             </div>
