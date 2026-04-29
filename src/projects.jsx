@@ -64,7 +64,7 @@ const projects = [
     description: "A website for THUB GADGET.",
     image: "/projects/project9.png.jpeg",
     tags: ["React", "Tailwind CSS"],
-    demoUrl: "https://minepro-gamma.vercel.app/",
+    demoUrl: "https://headphonee-ecommerce-t.vercel.app/",
   },
   {
     id: 9,
