@@ -110,9 +110,8 @@ const projects = [
 export default function Example3() {
   const [filter, setFilter] = useState("all");
 
-  const filtered = filter === "all"
-    ? projects
-    : projects.filter(p => p.category === filter);
+  const filtered =
+    filter === "all" ? projects : projects.filter((p) => p.category === filter);
   return (
     <div
       id="projects"
@@ -158,7 +157,7 @@ export default function Example3() {
       </div>
 
       <div className="flex justify-center gap-3 mb-10">
-        {["all", "videography", "frontend"].map((f) => (
+        {["all", "Videography", "Web Development"].map((f) => (
           <button
             key={f}
             onClick={() => setFilter(f)}
@@ -171,9 +170,9 @@ export default function Example3() {
           >
             {f === "all"
               ? "All Projects"
-              : f === "videography"
+              : f === "Videography"
                 ? "🎬 Videography"
-                : "💻 Frontend Dev"}
+                : "💻 Web Development"}
           </button>
         ))}
       </div>
