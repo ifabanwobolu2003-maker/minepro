@@ -157,22 +157,22 @@ export default function Example3() {
       </div>
 
       <div className="flex justify-center gap-3 mb-10">
-        {["all", "Videography", "Web Development"].map((f) => (
+        {[
+          { value: "all", label: "All Projects" },
+          { value: "Videography", label: "🎬 Videography" },
+          { value: "Web Development", label: "💻 Web Development" },
+        ].map((f) => (
           <button
-            key={f}
-            onClick={() => setFilter(f)}
+            key={f.value}
+            onClick={() => setFilter(f.value)}
             className={`px-6 py-2 rounded-full text-sm font-semibold capitalize transition-all border
           ${
-            filter === f
+            filter === f.value
               ? "bg-indigo-500 text-white border-indigo-500"
               : "bg-transparent text-gray-400 border-gray-600 hover:border-indigo-400 hover:text-white"
           }`}
           >
-            {f === "all"
-              ? "All Projects"
-              : f === "Videography"
-                ? "🎬 Videography"
-                : "💻 Web Development"}
+            {f.label}
           </button>
         ))}
       </div>
