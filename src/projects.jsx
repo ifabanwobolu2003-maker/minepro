@@ -2,6 +2,7 @@ const projects = [
   {
     id: 1,
     title: "Elites 2025 Recap video",
+    category: "Videography",
     description: "A video of Elite 2025 memories.",
     image: "/projects/project8.png.jpeg",
     tags: ["CapCut", "Videography"],
@@ -11,6 +12,7 @@ const projects = [
   {
     id: 2,
     title: "BTS of APPSN",
+    category: "Videography",
     description: "Behind the scenes of APPSN.",
     image: "/projects/work1.jpeg",
     tags: ["CapCut", "Videography"],
@@ -20,6 +22,7 @@ const projects = [
   {
     id: 3,
     title: "Tife Recap of 2025",
+    category: "Videography",
     description: "A video of tife 2025 memories.",
     image: "/projects/project3.png.jpeg",
     tags: ["CapCut", "Videography"],
@@ -29,6 +32,7 @@ const projects = [
   {
     id: 4,
     title: "FaceBook Login",
+    category: "Web Development",
     description: "Recreation of Facebook login.",
     image: "/projects/project4.png.jpeg",
     tags: ["HTML", "CSS"],
@@ -37,6 +41,7 @@ const projects = [
   {
     id: 5,
     title: "Instsgram Login",
+    category: "Web Development",
     description: "Recreation of Instagram login.",
     image: "/projects/project5.png.jpeg",
     tags: ["HTML", "CSS"],
@@ -45,6 +50,7 @@ const projects = [
   {
     id: 6,
     title: "Google Website Clone",
+    category: "Web Development",
     description: "A recreation of Google's website.",
     image: "/projects/project6.png.jpeg",
     tags: ["HTML", "CSS"],
@@ -53,6 +59,7 @@ const projects = [
   {
     id: 7,
     title: "Apple Website Clone",
+    category: "Web Development",
     description: "A recreation of Apple's website.",
     image: "/projects/project7.png.jpeg",
     tags: ["HTML", "CSS"],
@@ -61,6 +68,7 @@ const projects = [
   {
     id: 8,
     title: "THUB GADGET",
+    category: "Web Development",
     description: "A website for THUB GADGET.",
     image: "/projects/project9.png.jpeg",
     tags: ["React", "Tailwind CSS"],
@@ -69,6 +77,7 @@ const projects = [
   {
     id: 9,
     title: "Convention 6.0 Recap video",
+    category: "Videography",
     description: "A video of convention 6.0",
     image: "/projects/project10.png.jpeg",
     tags: ["CapCut", "Videography"],
@@ -78,6 +87,7 @@ const projects = [
   {
     id: 10,
     title: "THUB LANDING PAGE",
+    category: "Web Development",
     description: "A website for THUB LANDING PAGE.",
     image: "/projects/project11.png.jpeg",
     tags: ["React", "Tailwind CSS"],
@@ -86,6 +96,7 @@ const projects = [
   {
     id: 11,
     title: "Recap of APPSN",
+    category: "Videography",
     description: "A video recap of the APPSN event.",
     image: "/projects/work2.jpeg",
     tags: ["CapCut", "Videography"],
@@ -95,6 +106,11 @@ const projects = [
 ];
 
 export default function Example3() {
+  const [filter, setFilter] = useState("all");
+
+  const filtered = filter === "all"
+    ? projects
+    : projects.filter(p => p.category === filter);
   return (
     <div
       id="projects"
@@ -139,9 +155,30 @@ export default function Example3() {
         </p>
       </div>
 
+      <div className="flex justify-center gap-3 mb-10">
+        {["all", "videography", "frontend"].map((f) => (
+          <button
+            key={f}
+            onClick={() => setFilter(f)}
+            className={`px-6 py-2 rounded-full text-sm font-semibold capitalize transition-all border
+          ${
+            filter === f
+              ? "bg-indigo-500 text-white border-indigo-500"
+              : "bg-transparent text-gray-400 border-gray-600 hover:border-indigo-400 hover:text-white"
+          }`}
+          >
+            {f === "all"
+              ? "All Projects"
+              : f === "videography"
+                ? "🎬 Videography"
+                : "💻 Frontend Dev"}
+          </button>
+        ))}
+      </div>
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {filtered.map((project) => (
             <div
               key={project.id}
               className=" group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
