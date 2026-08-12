@@ -42,9 +42,15 @@ export default function Example2() {
         />
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
-        <div className="w-full lg:w-1/2"></div>
-        <div className="mx-auto max-w-2xl lg:mx-0 text-center">
-          <h2 className="text-7xl justify-self-center font-semibold tracking-tight text-blue-600/50 dark:text-sky-400/50 sm:text-7xl">
+        <div className="w-full lg:w-1/2">
+          <img
+            src="/projects/meee.jpeg"
+            alt="Ifabanwo Boluwatife"
+            className="w-full rounded-2xl object-cover shadow-lg"
+          />
+        </div>
+        <div className="w-full lg:w-1/2 text-left">
+          <h2 className="text-5xl font-semibold tracking-tight text-blue-600/50 dark:text-sky-400/50">
             About Me
           </h2>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
