@@ -23,13 +23,14 @@ const projects = [
   },
   {
     id: 3,
-    title: "Tife Recap of 2025",
+    title: "NITHUB INNOVATION FAIR 2026",
     category: "Videography",
-    description: "A video of tife 2025 memories.",
-    image: "/projects/project3.png.jpeg",
+    description:
+      " 5 REASONS WHY NITHUB INNOVATION FAIR 2026 IS A MUST-ATTEND EVENT.",
+    image: "/projects/work3.jpeg",
     tags: ["CapCut", "Videography"],
     demoUrl:
-      "https://drive.google.com/file/d/1OQpZNdt4rrfzN8ZaEAg7F7sYWWTB5oKR/view?usp=drivesdk",
+      "https://www.instagram.com/reel/DbQk1AWttC4/?igsh=MXJxNjRmemc1eW1waw==",
   },
   {
     id: 4,
