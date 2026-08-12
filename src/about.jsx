@@ -58,18 +58,23 @@ export default function Example2() {
             <b className="text-blue-600/50 dark:text-sky-400/50">
               Ifabanwo Boluwatife
             </b>
-            , a mobile videographer driven by storytelling, creativity, and the
-            art of capturing moments that speak without words. With my phone as
-            my primary tool, I create visually engaging content that blends
-            simplicity with impact.<br></br>
+            , and honestly, this whole journey started with just me and my phone
+            camera. No fancy equipment, no film school, just a genuine interest
+            in capturing moments that actually mean something. I spent a lot of
+            time figuring out timing, light, angles — the stuff nobody teaches
+            you, you just learn by doing it over and over until it clicks.
+            <br></br>
           </p>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-            Beyond visuals, I’ve expanded my creative journey into tech by
-            completing a frontend development program at NITHUB, University of
-            Lagos. This combination of visual creativity and technical skill
-            allows me to build digital experiences that not only look good but
-            feel intentional, functional, and human-centered. I’m constantly
-            learning, creating, and pushing ideas beyond the ordinary.
+            Tech wasn't really the plan at first. But the more I got into video,
+            the more I noticed I was thinking about the same things developers
+            think about — how something flows, why certain layouts just work and
+            others don't. So I decided to learn it properly and went through a
+            frontend development program at NITHUB, University of Lagos.
+          </p>
+          <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
+            Still learning both crafts, still figuring a lot out. But I'd rather
+            build and show you what I can do than talk about it.
           </p>
         </div>
       </div>
