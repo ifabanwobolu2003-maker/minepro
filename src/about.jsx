@@ -42,7 +42,7 @@ export default function Example2() {
         />
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
-        <div className="w-full lg:w-1/2">
+        <div className="w-full max-w-md rounded-2xl object-cover lg:w-1/2">
           <img
             src="/projects/meee.jpeg"
             alt="Ifabanwo Boluwatife"
