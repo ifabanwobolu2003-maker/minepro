@@ -13,9 +13,10 @@
 
 export default function Example2() {
   return (
-    <div 
-    id="about"
-    className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 ">
+    <div
+      id="about"
+      className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 "
+    >
       <div
         aria-hidden="true"
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -23,7 +24,7 @@ export default function Example2() {
         <div
           style={{
             clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
           className="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
         />
@@ -35,23 +36,37 @@ export default function Example2() {
         <div
           style={{
             clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
           className="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
         />
       </div>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 flex items-center justify-center">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+        <div className="w-full lg:w-1/2"></div>
         <div className="mx-auto max-w-2xl lg:mx-0 text-center">
-          <h2 className="text-7xl justify-self-center font-semibold tracking-tight text-blue-600/50 dark:text-sky-400/50 sm:text-7xl">About Me</h2>
+          <h2 className="text-7xl justify-self-center font-semibold tracking-tight text-blue-600/50 dark:text-sky-400/50 sm:text-7xl">
+            About Me
+          </h2>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-            I’m <b className="text-blue-600/50 dark:text-sky-400/50">Ifabanwo Boluwatife</b>, a mobile videographer driven by storytelling, creativity, and the art of capturing moments that speak without words. With my phone as my primary tool, I create visually engaging content that blends simplicity with impact.<br></br>
+            I’m{" "}
+            <b className="text-blue-600/50 dark:text-sky-400/50">
+              Ifabanwo Boluwatife
+            </b>
+            , a mobile videographer driven by storytelling, creativity, and the
+            art of capturing moments that speak without words. With my phone as
+            my primary tool, I create visually engaging content that blends
+            simplicity with impact.<br></br>
           </p>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-            Beyond visuals, I’ve expanded my creative journey into tech by completing a frontend development program at NITHUB, University of Lagos. This combination of visual creativity and technical skill allows me to build digital experiences that not only look good but feel intentional, functional, and human-centered. 
-            I’m constantly learning, creating, and pushing ideas beyond the ordinary.
+            Beyond visuals, I’ve expanded my creative journey into tech by
+            completing a frontend development program at NITHUB, University of
+            Lagos. This combination of visual creativity and technical skill
+            allows me to build digital experiences that not only look good but
+            feel intentional, functional, and human-centered. I’m constantly
+            learning, creating, and pushing ideas beyond the ordinary.
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
